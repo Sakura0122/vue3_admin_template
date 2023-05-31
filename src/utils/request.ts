@@ -20,7 +20,7 @@ request.interceptors.response.use(
   (error) => {
     //失败回调:处理http网络错误的
     //定义一个变量:存储网络错误信息
-    let message = ''
+    let message: string
     //http状态码
     const status = error.response.status
     switch (status) {
