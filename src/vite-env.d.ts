@@ -1,6 +1,17 @@
 /// <reference types="vite/client" />
-declare module "*.vue" {
-  import { DefineComponent } from "vue"
+//解决ts文件引入vue文件出现红色警告问题
+declare module '*.vue' {
+  import { DefineComponent } from 'vue'
   const component: DefineComponent<{}, {}, any>
   export default component
+}
+
+// 手动声明 ElMessage
+declare module 'element-plus' {
+  export class ElMessage {
+    static success(message: string): void
+    static warning(message: string): void
+    static info(message: string): void
+    static error(message: string): void
+  }
 }
