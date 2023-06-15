@@ -2,7 +2,7 @@
 defineProps({
   prefix: {
     type: String,
-    default: '#icon-',
+    default: "#icon-",
   },
   // 使用图标的名字
   name: {
@@ -11,18 +11,18 @@ defineProps({
   // 使用图标的颜色
   color: {
     type: String,
-    default: '',
+    default: "",
   },
   // 图标宽高
   width: {
     type: String,
-    default: '16px',
+    default: "16px",
   },
   height: {
     type: String,
-    default: '16px',
+    default: "16px",
   },
-})
+});
 </script>
 
 <template>
